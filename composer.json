@@ -9,7 +9,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Apollo16\\Core\\Payload||": ""
+            "Apollo16\\Core\\Payload\\": ""
         }
     },
     "extra": {
