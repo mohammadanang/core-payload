@@ -19,7 +19,7 @@ class ServiceProvider extends LaravelServiceProvider
     public function register()
     {
         $this->app->bind('apollo16.payload', function($app) {
-            return new Broker($app['encryter'], $app['request']);
+            return new Broker($app['encrypter'], $app['request']);
         }, true);
 
         $this->app->alias('apollo16.payload', Broker::class);
